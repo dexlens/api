@@ -8,8 +8,6 @@ if (import.meta.main) {
     const denoFile = Deno.readTextFileSync("./deno.json");
     const denoJSON = JSON.parse(denoFile);
 
-    console.log(denoJSON.version);
-
     if (lastPublishedVersion !== denoJSON.version) {
         console.log("New version detected, announcing...");
         const context = github.context;
@@ -24,7 +22,7 @@ if (import.meta.main) {
             
 We're excited to announce that the Dexlens API has been updated to version ${denoJSON.version}. This release includes several new features and improvements 
 
-API: https://api.dexlens.io
+Documentation: https://api.dexlens.io/docs
 Repo: https://github.com/dexlens/api
 `
         });
