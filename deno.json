@@ -6,7 +6,7 @@
     "url": "https://github.com/dexlens/api"
   },
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --watch apiServer.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
