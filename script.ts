@@ -31,6 +31,7 @@ Repo: https://github.com/dexlens/api
     } else {
         console.log("No new version detected, skipping...");
     }
+    
 
     // lastPublished.txt
     Deno.writeTextFileSync("./lastAnnouncedVersion.txt", denoJSON.version);    
