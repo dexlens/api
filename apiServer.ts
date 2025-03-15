@@ -23,6 +23,11 @@ const swaggerOptions = {
 // enable swagger ui
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 
+// make the / be index.html
+app.get("/", (req, res) => {
+  res.sendFile(Deno.cwd() + "/index.html");
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
