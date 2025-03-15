@@ -26,5 +26,5 @@ if (import.meta.main) {
     }
 
     // lastPublished.txt
-    Deno.writeTextFileSync("./lastAnnouncedVersion.txt", denoJSON.version);
+    Deno.writeTextFileSync("./lastAnnouncedVersion.txt", denoJSON.version);    
 }
