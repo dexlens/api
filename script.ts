@@ -22,7 +22,9 @@ if (import.meta.main) {
             lastPublishedVersion: lastPublishedVersion,
             annoucementTweet: `🚀 New version ${denoJSON.version} of Dexlens API released! 🚀
             
-            We're excited to announce that the Dexlens API has been updated to version ${denoJSON.version}. This release includes several new features and improvements, see <a href="https://github.com/dexlens/api/pull/5">pull request</a> for more details.`
+            We're excited to announce that the Dexlens API has been updated to version ${denoJSON.version}. This release includes several new features and improvements 
+            
+            Repo: "https://github.com/dexlens/api"`
         });
     } else {
         console.log("No new version detected, skipping...");
