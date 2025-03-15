@@ -21,7 +21,6 @@ const swaggerOptions = {
 };
 
 
-
 // enable swagger ui
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 
