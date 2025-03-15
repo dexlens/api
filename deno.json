@@ -1,4 +1,10 @@
 {
+  "version": "0.0.1",
+  "description": "Dexlens API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dexlens/api"
+  },
   "tasks": {
     "dev": "deno run --watch main.ts"
   },
